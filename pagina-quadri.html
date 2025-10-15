@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Darya Snegireva">
+<meta name="generator" content="Visual Studio Code">
+<meta name="description" content="label">
+<meta name="keywords" content="label">
+<title>Document</title>
+ <title>Quadri Artistici - Le mie opere</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf8;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #b84f74;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #7a3a52;
+      font-size: 18px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .product {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      transition: transform 0.2s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      color: #7a3a52;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .product p {
+      color: #444;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .buttons a button {
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.2s ease;
+    }
+
+    .etsy-btn {
+      background-color: #e47fa0;
+    }
+
+    .etsy-btn:hover {
+      background-color: #c75f84;
+    }
+
+    .whatsapp-btn {
+      background-color: #25D366;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1da955;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<html>
+<body>
+        <!-- Меню сайта -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pagina-quadri.html">Quadri</a></li>
+            <li><a href="pagina-ceramiche.html">Ceramiche</a></li>
+            <li><a href="pagina-candele.html">Candele</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+    </nav>
+ <h1>Quadri Artistici</h1>
+  <p>Opere create con il cuore — ogni quadro racconta una storia.</p>
+
+  <div class="gallery">
+
+    <!-- QUADRO 1 -->
+    <div class="product">
+      <img src="immagini/quadro1.jpg" alt="Quadro Astratto Rosa">
+      <h3>Quadro Astratto Rosa</h3>
+      <p>€80,00</p>
+      <div class="buttons">
+        <a href="https://www.etsy.com/shop/LePetitChat69" target="_blank">
+          <button class="etsy-btn">Acquista su Etsy</button>
+        </a>
+        <a href="https://wa.me/393401234567?text=Ciao!%20Vorrei%20maggiori%20informazioni%20su%20questo%20quadro." target="_blank">
+          <button class="whatsapp-btn">Contattami</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- QUADRO 2 -->
+    <div class="product">
+      <img src="immagini/quadro2.jpg" alt="Paesaggio Blu">
+      <h3>Paesaggio Blu</h3>
+      <p>€95,00</p>
+      <div class="buttons">
+        <a href="https://www.etsy.com/shop/LePetitChat69" target="_blank">
+          <button class="etsy-btn">Acquista su Etsy</button>
+        </a>
+        <a href="https://wa.me/393401234567?text=Ciao!%20Vorrei%20maggiori%20informazioni%20su%20questo%20quadro." target="_blank">
+          <button class="whatsapp-btn">Contattami</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- QUADRO 3 -->
+    <div class="product">
+      <img src="immagini/quadro3.jpg" alt="Donna con i fiori">
+      <h3>Donna con i fiori</h3>
+      <p>€120,00</p>
+      <div class="buttons">
+        <a href="https://www.etsy.com/shop/LePetitChat69" target="_blank">
+          <button class="etsy-btn">Acquista su Etsy</button>
+        </a>
+        <a href="https://wa.me/393401234567?text=Ciao!%20Vorrei%20maggiori%20informazioni%20su%20questo%20quadro." target="_blank">
+          <button class="whatsapp-btn">Contattami</button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
